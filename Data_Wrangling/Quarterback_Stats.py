@@ -36,7 +36,5 @@ def get_qb_stats_by_years(years):
 
     return result_df
 
-test = get_qb_stats_by_years([2018, 2019])
 
-test['Year'].value_counts()
 

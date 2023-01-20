@@ -57,10 +57,10 @@ def get_cpi_by_years(years):
 
     cpi_list = [get_cpi_df(year) for year in years]
 
-    result = pd.concat(cpi_list, ignore_index=True,axis=0)
-    result.reset_index(drop = True, inplace = True)
+    result_df = pd.concat(cpi_list, ignore_index=True,axis=0)
+    result_df.reset_index(drop = True, inplace = True)
 
-    return result
+    return result_df
 
 test = get_cpi_by_years([2018])
 
