@@ -51,6 +51,8 @@ def get_cpi_df(year):
     cpi_df['Team'] = cpi_df['Team'].apply(lambda x: x.replace(',', ""))
     cpi_df['Team'] = cpi_df['Team'].apply(lambda x: x.strip())
 
+    
+
     return cpi_df
 
 def get_cpi_by_years(years):
@@ -62,7 +64,7 @@ def get_cpi_by_years(years):
 
     return result_df
 
-test = get_cpi_by_years([2018])
+#test = get_cpi_by_years(range(2012, 2020, 1))
 
-test[test['Year'] == 2018].head()
+#test[test['Year'] == 2012].head()
 

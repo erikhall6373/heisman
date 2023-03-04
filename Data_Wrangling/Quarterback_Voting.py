@@ -90,7 +90,7 @@ def get_quarterback_voting_data(years):
 
     return result
 
-test = get_quarterback_voting_data(range(2006, 2019, 1))
+#test = get_quarterback_voting_data(range(2006, 2019, 1))
 
-test[test['year'] == 2014].head(10)
+#test[test['year'] == 2014].head(10)
 
