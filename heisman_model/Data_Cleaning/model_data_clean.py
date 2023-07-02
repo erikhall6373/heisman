@@ -25,6 +25,8 @@ def stats_cleaning(stats_df):
     stats_df = pd.concat([stats_df, pd.DataFrame(kReynolds_data)], axis = 0)
     stats_df.reset_index(drop = True, inplace= True)
 
+    stats_df['Power5'] = np.where(stats_df['School'] == 'Notre Dame', 1, stats_df['Power5'])
+
     return stats_df
 
 def voting_cleaning(voting_df):
@@ -56,7 +58,34 @@ def cpi_cleaning(cpi_df):
         'Fresno St' : 'Fresno State',
         'Ohio State*' : 'Ohio State',
         'Michigan St' : 'Michigan State',
-        'Washington St' : 'Washington State'
+        'Washington St' : 'Washington State',
+        'Alabama-Birmingham' : 'UAB', 
+        'Appalachian St' : 'Appalachian State', 
+        'Arizona St' : 'Arizona State', 
+        'Arkansas St' : 'Arkansas State', 
+        'Colorado St' : 'Colorado State', 
+        "Florida Int'l" : 'Florida International', 
+        'Georgia St' : 'Georgia State', 
+        'Iowa St' : 'Iowa State', 
+        'Kent St' : 'Kent State', 
+        'Louisiana-Lafayette' : 'Louisiana', 
+        'Miami FL' : 'Miami (FL)', 
+        'Miami OH' : 'Miami (OH)', 
+        'Middle Tennessee St' : 'Middle Tennessee State', 
+        'Mississippi' : 'Ole Miss', 
+        'New Mexico St' : 'New Mexico State', 
+        'North Carolina St' : 'North Carolina State', 
+        'Ohio U.' : 'Ohio', 
+        'Oregon St' : 'Oregon State', 
+        'Pittsburgh' : 'Pitt', 
+        'San Diego St' : 'San Diego State', 
+        'San Jose St' : 'San Jose State', 
+        'Southern Miss' : 'Southern Mississippi', 
+        'Texas St-San Marcos' : 'Texas State', 
+        'Texas-San Antonio' : 'UTSA', 
+        'UNC-Charlotte' : 'Charlotte', 
+        'Utah St' : 'Utah State',
+        'Bowling Green' : 'Bowling Green State'
     }
     
     keepcols = ['School', 'Year', 'CPI']
