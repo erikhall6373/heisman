@@ -1,41 +1,42 @@
 name: Get Weekly Data
 
 on:
-  schedule:
-    - cron: '0 0 * * 1' # At 00:00 on Monday
+  workflow_dispatch:
+    schedule:
+      - cron: '0 0 * * 1' # At 00:00 on Monday
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
+  jobs:
+    build:
+      runs-on: ubuntu-latest
+      steps:
 
-      - name: checkout repo content
-        uses: actions/checkout@v2 # checkout the repository content to github runner
+        - name: checkout repo content
+          uses: actions/checkout@v2 # checkout the repository content to github runner
 
-      - name: setup python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.9' # install the python version needed
+        - name: setup python
+          uses: actions/setup-python@v4
+          with:
+            python-version: '3.9' # install the python version needed
           
-      - name: install python packages
-        run: |
-          python -m pip install --upgrade pip
-          pip install pandas
-          pip install numpy
-          pip install statsmodels
+        - name: install python packages
+          run: |
+            python -m pip install --upgrade pip
+            pip install pandas
+            pip install numpy
+            pip install statsmodels
           
-      - name: execute py script # run main.py
-        run: python .\Weekly_Data_Job\Weekly_Job.py
+        - name: execute py script # run main.py
+          run: python .\Weekly_Data_Job\Weekly_Job.py
           
-      - name: commit files
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add -A
-          git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
+        - name: commit files
+          run: |
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
+            git add -A
+            git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
           
-      - name: push changes
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: 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
-          branch: main 
+        - name: push changes
+          uses: ad-m/github-push-action@v0.6.0
+          with:
+            github_token: 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
+            branch: main 
