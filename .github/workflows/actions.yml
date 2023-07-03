@@ -28,3 +28,9 @@ jobs:
             pip install lxml
     - name: Run Script
       run : python ./Weekly_Data_Job/Weekly_Job.py
+    
+    - name: push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: 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
+          branch: master
