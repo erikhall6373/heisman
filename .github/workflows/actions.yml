@@ -11,6 +11,9 @@ env:
 jobs:
   weekly-data:
     runs-on: ubuntu-latest
+    env: 
+      CI_COMMIT_MESSAGE: Continuous Integration Build Artifacts
+      CI_COMMIT_AUTHOR: Continuous Integration
 
     steps:
     - name: Checkout repo
@@ -29,15 +32,11 @@ jobs:
     - name: Run Script
       run : python ./Weekly_Data_Job/Weekly_Job.py
     
-    - name: commit files
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add -A
-          git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
-    
-    - name: push changes
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: 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
-          branch: master
+
+    - name: GIT Commit
+      if: github.event_name == 'push'
+      run: |
+        git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+        git config --global user.email "erikhall6373@users.noreply.github.com"
+        git commit -a -m "${{ env.CI_COMMIT_MESSAGE }}"
+        git push
