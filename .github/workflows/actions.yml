@@ -17,7 +17,7 @@ jobs:
 
     steps:
     - name: Checkout repo
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     - name: Set up Python
       uses: actions/setup-python@v2.0.0
       with:
@@ -32,12 +32,10 @@ jobs:
     - name: Run Script
       run : python ./Weekly_Data_Job/Weekly_Job.py
     
-    - name: Set git identity
-      run: |
-        git config user.name 'github-actions[bot]'
-        git config user.email 'github-actions[bot]@users.noreply.github.com'
-  
-    - name: Push
-      run: |
-        git remote set-url origin https://x-access-token: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@github.com/erikhall6373/heisman
-        git push
+    - run: |
+          date > generated.txt
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "generated"
+          git push
