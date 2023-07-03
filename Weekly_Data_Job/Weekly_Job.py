@@ -28,5 +28,5 @@ weekly_df['Power5'] = np.where(weekly_df['School'] == 'Notre Dame', 1, weekly_df
 weekly_df = weekly_df[analysis_cols]
 
 abs_path = os.path.abspath('.\Data')
-weekly_df.to_csv(abs_path + 'Weekly_Data.csv', index = False)
+weekly_df.to_csv(os.path.join(abs_path, 'Weekly_Data.csv'), index = False)
 
