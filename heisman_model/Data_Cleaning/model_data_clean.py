@@ -1,10 +1,6 @@
 import pandas as pd
 import numpy as np
 
-cpi_data = pd.read_csv("Data\CPI_Data.csv")
-voting_data = pd.read_csv("Data\QB_Voting_Data.csv")
-stats_data = pd.read_csv("Data\QB_Stats_Data.csv")
-
 def stats_cleaning(stats_df):
     
     keepcols = ['Player', 'School', 'Passing_Rate', 'Passing_TD', 'Rushing_TD', 'Power5', 'Year']
