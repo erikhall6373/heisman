@@ -32,13 +32,12 @@ jobs:
     - name: Run Script
       run : python ./Weekly_Data_Job/Weekly_Job.py
     
-    - name: Configure Git
+    - name: Set git identity
         run: |
-          git config --global user.name "erikhall6373"
-          git config --global user.email "erikhall6373@gmail.com"
-    - name: Stage changes
-        run: git add -A
-    - name: Commit changes
-        run: git commit -m "${{ env.CI_COMMIT_MESSAGE }}" --author="${{ env.CI_COMMIT_AUTHOR }}"
-    - name: Push changes
-        uses: ad-m/github-push-action@v0.6.0
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+  
+    - name: Push
+        run: |
+          git remote set-url origin https://x-access-token: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@github.com/erikhall6373/heisman
+          git push
