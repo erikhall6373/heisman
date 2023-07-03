@@ -35,8 +35,8 @@ on:
             git add -A
             git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
           
-        - name: push changes
-          uses: ad-m/github-push-action@v0.6.0
-          with:
-            github_token: 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
-            branch: main 
+      - name: push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: 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
+          branch: master
