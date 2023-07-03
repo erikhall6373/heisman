@@ -38,4 +38,4 @@ jobs:
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: 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
-          branch: main 
+          branch: master
