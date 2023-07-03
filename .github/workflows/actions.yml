@@ -4,6 +4,8 @@ on:
   schedule:
     - cron: "*/8 * * * *"
   workflow_dispatch:
+  permissions:
+      contents: write
 
 env:
   ACTIONS_ALLOW_UNSECURE_COMMANDS: true
@@ -33,10 +35,11 @@ jobs:
       run : python ./Weekly_Data_Job/Weekly_Job.py
     
 
-    - name: GIT Commit
-      run: |
-        git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
-        git config --global user.email "erikhall6373@users.noreply.github.com"
-        git add -A
-        git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
-        git push origin master
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add -A
+          git commit -m "generated"
+          git push
