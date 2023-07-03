@@ -25,5 +25,6 @@ jobs:
             pip install pandas
             pip install numpy
             pip install statsmodels
+            pip install lxml
     - name: Run Script
       run : python ./Weekly_Data_Job/Weekly_Job.py
