@@ -1,42 +1,29 @@
-name: Get Weekly Data
+name : Get Weekly Data
 
 on:
+  schedule:
+    - cron: "*/8 * * * *"
   workflow_dispatch:
-    schedule:
-      - cron: '0 0 * * 1' # At 00:00 on Monday
 
-  jobs:
-    build:
-      runs-on: ubuntu-latest
-      steps:
+env:
+  ACTIONS_ALLOW_UNSECURE_COMMANDS: true
 
-        - name: checkout repo content
-          uses: actions/checkout@v2 # checkout the repository content to github runner
+jobs:
+  weekly-data:
+    runs-on: ubuntu-latest
 
-        - name: setup python
-          uses: actions/setup-python@v4
-          with:
-            python-version: '3.9' # install the python version needed
-          
-        - name: install python packages
-          run: |
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2.0.0
+      with:
+        python-version: '3.9'
+    - name: Install requirements
+      run:  |
             python -m pip install --upgrade pip
             pip install pandas
             pip install numpy
             pip install statsmodels
-          
-        - name: execute py script # run main.py
-          run: python .\Weekly_Data_Job\Weekly_Job.py
-          
-        - name: commit files
-          run: |
-            git config --local user.email "action@github.com"
-            git config --local user.name "GitHub Action"
-            git add -A
-            git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
-          
-      - name: push changes
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: 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
-          branch: master
+    - name: Run Script
+      run : python .\Weekly_Data_Job\Weekly_Job.py
