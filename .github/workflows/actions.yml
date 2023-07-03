@@ -4,8 +4,6 @@ on:
   schedule:
     - cron: "*/8 * * * *"
   workflow_dispatch:
-  permissions:
-      contents: write
 
 env:
   ACTIONS_ALLOW_UNSECURE_COMMANDS: true
@@ -34,12 +32,13 @@ jobs:
     - name: Run Script
       run : python ./Weekly_Data_Job/Weekly_Job.py
     
-
-    steps:
-      - uses: actions/checkout@v3
-      - run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add -A
-          git commit -m "generated"
-          git push
+    - name: Configure Git
+        run: |
+          git config --global user.name "erikhall6373"
+          git config --global user.email "erikhall6373@gmail.com"
+    - name: Stage changes
+        run: git add -A
+    - name: Commit changes
+        run: git commit -m "${{ env.CI_COMMIT_MESSAGE }}" --author="${{ env.CI_COMMIT_AUTHOR }}"
+    - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
