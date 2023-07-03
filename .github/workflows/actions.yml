@@ -34,9 +34,8 @@ jobs:
     
 
     - name: GIT Commit
-      if: github.event_name == 'push'
       run: |
         git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
         git config --global user.email "erikhall6373@users.noreply.github.com"
         git commit -a -m "${{ env.CI_COMMIT_MESSAGE }}"
-        git push
+        git push origin master
