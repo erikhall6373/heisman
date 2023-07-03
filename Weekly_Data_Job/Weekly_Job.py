@@ -10,6 +10,8 @@ from heisman_model.Data_Wrangling import Quarterback_Stats
 from heisman_model.Data_Wrangling import CPI_Ratings
 from heisman_model.Data_Cleaning import model_data_clean
 
+os.remove('./Data/Weekly_Data.csv')
+
 analysis_cols = ['Player', 'School', 'Passing_Rate', 'Passing_TD', 'Rushing_TD', 'Power5', 'CPI']
 power5 = ['ACC', 'Big 12', 'Big Ten', 'Pac-10', 'Pac-12', 'SEC']
 
@@ -27,5 +29,5 @@ weekly_df['Power5'] = weekly_df['Conf'].apply(lambda x: 1 if x in power5 else 0)
 weekly_df['Power5'] = np.where(weekly_df['School'] == 'Notre Dame', 1, weekly_df['Power5'])
 weekly_df = weekly_df[analysis_cols]
 
-weekly_df.to_csv(os.path.join('./Data/Weekly_Test_Data.csv'), index = False)
+weekly_df.to_csv(os.path.join('./Data/Weekly_Data.csv'), index = False)
 
