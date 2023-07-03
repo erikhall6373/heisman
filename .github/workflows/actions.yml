@@ -33,11 +33,11 @@ jobs:
       run : python ./Weekly_Data_Job/Weekly_Job.py
     
     - name: Set git identity
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email 'github-actions[bot]@users.noreply.github.com'
+      run: |
+        git config user.name 'github-actions[bot]'
+        git config user.email 'github-actions[bot]@users.noreply.github.com'
   
     - name: Push
-        run: |
-          git remote set-url origin https://x-access-token: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@github.com/erikhall6373/heisman
-          git push
+      run: |
+        git remote set-url origin https://x-access-token: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@github.com/erikhall6373/heisman
+        git push
