@@ -94,11 +94,20 @@ def cpi_cleaning(cpi_df):
 
     return cpi_df
 
-stats_data = stats_cleaning(stats_data)
-voting_data = voting_cleaning(voting_data)
-cpi_data = cpi_cleaning(cpi_data)
+def main():
 
-model_data = voting_data.merge(stats_data, on = ['Player', 'School', 'Year'], how = 'left')
-model_data = model_data.merge(cpi_data, on = ['School', 'Year'], how = 'left')
+    cpi_data = pd.read_csv("Data\CPI_Data.csv")
+    voting_data = pd.read_csv("Data\QB_Voting_Data.csv")
+    stats_data = pd.read_csv("Data\QB_Stats_Data.csv")
 
-model_data.to_csv("Data\Model_Data.csv", index = False)
+    stats_data = stats_cleaning(stats_data)
+    voting_data = voting_cleaning(voting_data)
+    cpi_data = cpi_cleaning(cpi_data)
+
+    model_data = voting_data.merge(stats_data, on = ['Player', 'School', 'Year'], how = 'left')
+    model_data = model_data.merge(cpi_data, on = ['School', 'Year'], how = 'left')
+
+    model_data.to_csv("Data\Model_Data.csv", index = False)
+
+if __name__ == "__main__":
+    main()
