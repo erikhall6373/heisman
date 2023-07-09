@@ -1,0 +1,1 @@
+[{"name": "app.py", "content": "from shiny import App, ui, render\n\n# Part 1: ui ----\napp_ui = ui.page_fluid(\n\n    ui.h1(\"Hello World\")         \n)\n\n\n\n\n# Part 2: server ----\ndef server(input, output, session):\n    return None\n\n# Combine into a shiny app.\n# Note that the variable must be \"app\".\napp = App(app_ui, server)", "type": "text"}]
