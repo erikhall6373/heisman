@@ -30,7 +30,7 @@ jobs:
             pip install statsmodels
             pip install lxml
     - name: Run Script
-      run : python ./heisman_project/Weekly_Data_Job/Weekly_Job.py
+      run : python /heisman_project/Weekly_Data_Job/Weekly_Job.py
     
     - name: commit files
       run: |
