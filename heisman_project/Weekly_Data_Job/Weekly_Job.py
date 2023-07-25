@@ -3,12 +3,12 @@ import os
 import pandas as pd
 import numpy as np
 
-project_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-sys.path.append(project_path)
+#project_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+#sys.path.append(project_path)
 
-from heisman_model.Data_Wrangling import Quarterback_Stats
-from heisman_model.Data_Wrangling import CPI_Ratings
-from heisman_model.Data_Cleaning import model_data_clean
+from heisman_project.heisman_model.Data_Wrangling import Quarterback_Stats
+from heisman_project.heisman_model.Data_Wrangling import CPI_Ratings
+from heisman_project.heisman_model.Data_Cleaning import model_data_clean
 
 os.remove('./Data/Weekly_Data.csv')
 
