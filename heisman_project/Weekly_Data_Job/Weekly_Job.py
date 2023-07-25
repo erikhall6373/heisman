@@ -10,7 +10,8 @@ from heisman_model.Data_Wrangling import Quarterback_Stats
 from heisman_model.Data_Wrangling import CPI_Ratings
 from heisman_model.Data_Cleaning import model_data_clean
 
-os.remove('./Data/Weekly_Data.csv')
+if os.path.exists('./Data/Weekly_Data.csv'):
+    os.remove('./Data/Weekly_Data.csv')
 
 analysis_cols = ['Player', 'School', 'Passing_Rate', 'Passing_TD', 'Rushing_TD', 'Power5', 'CPI']
 power5 = ['ACC', 'Big 12', 'Big Ten', 'Pac-10', 'Pac-12', 'SEC']
