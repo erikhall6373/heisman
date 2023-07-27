@@ -53,11 +53,11 @@ app_ui = ui.page_fluid(
             to the different positions across college football.
             <br />
 
-            The model itself a linear regression with voting points as a response, and individual and team
-            statitistics as the predictors.
+            The model itself is a linear regression with voting points as a response, and individual and team
+            statitistics as the predictors. The model is built with training data from the 2006 to 2018 seasons.
             <br />
 
-            The model is made up the following 5 predictors;
+            The model is made up of the following 5 predictors;
             <br />
             
             **Passer Rating** : Passer efficency rating as according to pro-football-reference.com.
@@ -66,11 +66,12 @@ app_ui = ui.page_fluid(
             **Passing TDs** : Number of passing touchdowns thrown by a quarterback.
             <br />
 
-            **Rushing TDs** : Number of rushing touchdowns thrown by a quarterback.
+            **Rushing TDs** : Number of rushing touchdowns ran by a quarterback.
             <br />
 
             **Power 5 Indicator** : A binary value of 0 or 1. Set equal to 1, 
-            if the quarterback's team plays in a power 5 conference. Otherwise 0.
+            if the quarterback's team plays in a power 5 conference. Otherwise 0. Notre Dame is the only independent team 
+            to receive a power 5 label.
             <br />
 
             **CPI** : A team strength of record metric involving the winning percentages of opponents. More details 
