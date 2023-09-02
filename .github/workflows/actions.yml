@@ -29,8 +29,12 @@ jobs:
             pip install numpy
             pip install statsmodels
             pip install lxml
+            pip install shinylive
     - name: Run Script
       run : python ./heisman_project/Weekly_Data_Job/Weekly_Job.py
+    
+    - name: Update Docs
+      run : shinylive export ./Shiny_App docs
     
     - name: commit files
       run: |
