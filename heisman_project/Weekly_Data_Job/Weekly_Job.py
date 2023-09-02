@@ -2,6 +2,7 @@ import sys
 import os
 import pandas as pd
 import numpy as np
+import shutil
 
 project_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 sys.path.append(project_path)
@@ -17,8 +18,8 @@ if os.path.exists('./Data/Weekly_Data.csv'):
 if os.path.exists('./Shiny_App/Weekly_Data.csv'):
     os.remove('./Shiny_App/Weekly_Data.csv')
 
-if os.path.exists('./docs'):
-    os.remove('./docs')
+if os.path.exists('.\docs'):
+    shutil.rmtree('.\docs')
 
 analysis_cols = ['Player', 'School', 'Passing_Rate', 'Passing_TD', 'Rushing_TD', 'Power5', 'CPI']
 power5 = ['ACC', 'Big 12', 'Big Ten', 'Pac-10', 'Pac-12', 'SEC']
