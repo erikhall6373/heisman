@@ -134,10 +134,11 @@ def server(input, output, session):
 
         result_df = current_df
 
-        result_cols = ['Player', 'School', 'Projected Voting Points', 'Passing_Rate', 'Passing_TD', 'Rushing_TD', 'Power5', 'CPI']
-        result_df = result_df[result_cols]
-
         result_df = result_df.sort_values(by = 'Projected Voting Points', ascending = False)
+        result_df = result_df.reset_index(drop = True)
+        result_df['Rank'] = result_df.index + 1
+        result_cols = ['Rank', 'Player', 'School', 'Projected Voting Points', 'Passing_Rate', 'Passing_TD', 'Rushing_TD', 'Power5', 'CPI']
+        result_df = result_df[result_cols]
 
         return result_df
     
