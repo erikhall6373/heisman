@@ -1,4 +1,4 @@
-// Shinylive 0.1.3
+// Shinylive 0.1.6
 // Copyright 2023 RStudio, PBC
 var __create = Object.create;
 var __defProp = Object.defineProperty;
