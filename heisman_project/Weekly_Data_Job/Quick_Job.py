@@ -20,4 +20,4 @@ current_df = pd.merge(current_df, current_predict_df, left_index=True, right_ind
 current_df['CPI'] = current_df['CPI'].round(2)
 current_df['Projected Voting Points'] = current_df['Projected Voting Points'].round(2)
 
-current_df.to_csv("")
+current_df.to_csv("", index = False)
