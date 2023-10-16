@@ -26,12 +26,12 @@ power5 = ['ACC', 'Big 12', 'Big Ten', 'Pac-10', 'Pac-12', 'SEC']
 
 qb_stats_df = Quarterback_Stats.get_cfb_ref_passing_data(2023)
 qb_stats_df = qb_stats_df[qb_stats_df['School'] != 'School']
-#cpi_df = CPI_Ratings.get_cpi_df(2022)
+cpi_df = CPI_Ratings.current_cpi_df(2023)
 
-#cpi_df = model_data_clean.cpi_cleaning(cpi_df)
+cpi_df = model_data_clean.cpi_cleaning(cpi_df)
 
-cpi_df = Get_Weekly_Win_Percent.calculate_winning_percent(2023)
-cpi_df['CPI'] = (cpi_df['Winning_Percent'] * 0.25) * 100
+#cpi_df = Get_Weekly_Win_Percent.calculate_winning_percent(2023)
+#cpi_df['CPI'] = (cpi_df['Winning_Percent'] * 0.25) * 100
 cpi_df = cpi_df[['School', 'Year', 'CPI']]
 
 weekly_df = qb_stats_df.merge(cpi_df, how = 'inner', on = ['School', 'Year'])

@@ -55,6 +55,28 @@ def get_cpi_df(year):
 
     return cpi_df
 
+def current_cpi_df(current_year):
+
+    cpi_tables = pd.read_html(f"http://www.cpiratings.com/archives/current_table.html")
+    cpi_df = cpi_tables[0]
+
+    cpi_df = set_col_names(cpi_df)
+    cpi_df = calc_unrounded_ratings(cpi_df)
+
+    cpi_df = cpi_df[['Team', 'CPI', 'W', 'L', 'OW', 'OL', 'OOW', 'OOL']].reset_index(drop = True)
+    cpi_df['Year'] = current_year
+    cpi_df['Team'] = cpi_df['Team'].apply(lambda x: x.replace('CFP', ""))
+    cpi_df['Team'] = cpi_df['Team'].apply(lambda x: x.replace('AP', ""))
+    cpi_df['Team'] = cpi_df['Team'].apply(lambda x: x.replace('BCS', ""))
+    cpi_df['Team'] = cpi_df['Team'].apply(lambda x: x.replace('(', ""))
+    cpi_df['Team'] = cpi_df['Team'].apply(lambda x: x.replace(')', ""))
+    cpi_df['Team'] = cpi_df['Team'].apply(lambda x: x.replace(',', ""))
+    cpi_df['Team'] = cpi_df['Team'].apply(lambda x: x.strip())
+
+    return cpi_df
+    
+
+
 def get_cpi_by_years(years):
 
     cpi_list = [get_cpi_df(year) for year in years]
@@ -67,4 +89,3 @@ def get_cpi_by_years(years):
 #test = get_cpi_by_years(range(2012, 2020, 1))
 
 #test[test['Year'] == 2012].head()
-
