@@ -1,3 +1,9 @@
+install.packages("cfbfastR")
+install.packages("dplyr")
+install.packages("gt")
+install.packages("gtExtras")
+install.packages("cfbplotR")
+
 library(cfbfastR)
 library(dplyr)
 library(gt)
