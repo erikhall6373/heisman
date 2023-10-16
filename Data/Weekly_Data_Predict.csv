@@ -1,110 +1,108 @@
 Player,School,Passing_Rate,Passing_TD,Rushing_TD,Power5,CPI,Projected Voting Points
-Michael Penix Jr.,Washington,196.5,16,0,1,25.0,1029.81
-Jayden Daniels,LSU,196.7,19,4,1,16.67,915.87
-Caleb Williams,USC,205.7,22,6,1,25.0,1529.98
-Kaidon Salter,Liberty,178.7,12,6,0,25.0,464.1
-Diego Pavia,New Mexico State,174.4,12,1,0,12.5,-350.6
-J.J. McCarthy,Michigan,189.5,11,3,1,25.0,983.75
-Jalen Milroe,Alabama,174.8,9,4,1,20.83,640.35
+Jayden Daniels,LSU,197.7,22,4,1,17.86,1039.81
+Michael Penix Jr.,Washington,189.9,20,0,1,25.0,1035.74
+J.J. McCarthy,Michigan,195.9,14,3,1,25.0,1118.3
+Jalen Milroe,Alabama,174.7,11,5,1,21.43,751.03
 Timmy Mcclain,UCF,177.7,9,1,1,12.5,178.45
-Brady Cook,Missouri,176.5,13,3,1,20.83,696.04
-Jack Plummer,Louisville,167.2,12,1,1,25.0,657.74
-Tyler Van Dyke,Miami (FL),178.8,12,1,1,20.0,575.33
-Brett Gabbert,Miami (OH),172.7,12,0,0,20.83,-56.5
-TJ Finley,Texas State,175.6,12,3,0,16.67,-66.58
+Kaidon Salter,Liberty,175.6,14,6,0,25.0,469.36
+Caleb Williams,USC,187.0,23,6,1,21.43,1182.17
 Jaxson Dart,Ole Miss,167.8,12,4,1,20.83,621.3
-Kyle McCord,Ohio State,164.0,8,0,1,25.0,494.09
-Carson Beck,Georgia,169.8,11,2,1,25.0,712.54
+Diego Pavia,New Mexico State,167.0,14,2,0,14.29,-272.32
+Kyle McCord,Ohio State,165.9,11,0,1,25.0,577.06
 Dillon Gabriel,Oklahoma,178.2,16,5,1,25.0,1046.98
-Jordan McCloud,James Madison,168.4,11,2,0,25.0,144.08
-Sam Hartman,Notre Dame,168.6,16,2,1,17.86,493.08
+Brady Cook,Missouri,168.7,14,4,1,21.43,698.05
+Tyler Van Dyke,Miami (FL),171.8,16,1,1,16.67,433.09
 Cardell Williams,Tulsa,151.6,8,3,0,12.5,-602.76
 Quinn Ewers,Texas,163.8,11,5,1,20.83,600.44
-Drake Maye,North Carolina,158.8,8,4,1,25.0,616.04
-Bo Nix,Oregon,184.7,15,1,1,25.0,919.54
+Brett Gabbert,Miami (OH),162.9,14,2,0,21.43,-11.62
+Jordan McCloud,James Madison,168.1,14,2,0,25.0,201.83
+Carson Beck,Georgia,163.8,12,3,1,25.0,709.55
+Jack Plummer,Louisville,153.2,13,1,1,21.43,363.81
+Sam Hartman,Notre Dame,166.9,18,2,1,18.75,552.84
+Drake Maye,North Carolina,159.1,12,4,1,25.0,701.06
 JT Daniels,Rice,157.4,15,0,0,12.5,-529.67
-Darren Grainger,Georgia State,157.3,7,3,0,20.0,-234.74
-Cameron Ward,Washington State,166.3,14,3,1,20.0,563.61
-Keyone Jenkins,Florida International,136.3,5,3,0,12.5,-839.33
-Dante Moore,UCLA,143.4,9,0,1,20.0,62.96
+Spencer Rattler,South Carolina,163.3,11,2,1,8.33,-79.92
+D.J. Uiagalelei,Oregon State,158.9,15,5,1,21.43,651.5
+Keyone Jenkins,Florida International,133.5,5,4,0,10.71,-902.96
+Garrett Greene,West Virginia,143.7,6,5,1,16.67,88.57
 Zeon Chriss,Louisiana,159.7,7,5,0,16.67,-260.04
-Spencer Rattler,South Carolina,156.2,7,2,1,10.0,-171.1
-D.J. Uiagalelei,Oregon State,155.7,13,5,1,20.83,548.39
-Cooper Legas,Utah State,163.6,10,0,0,12.5,-560.58
+TJ Finley,Texas State,160.5,14,3,0,17.86,-147.59
+Bo Nix,Oregon,178.2,17,1,1,20.83,706.33
+Cooper Legas,Utah State,159.7,13,0,0,10.71,-621.02
+Darren Grainger,Georgia State,154.4,8,5,0,20.83,-120.91
+Graham Mertz,Florida,163.7,12,2,1,17.86,355.32
+Cameron Ward,Washington State,159.8,14,3,1,16.67,345.52
+Gunnar Watson,Troy,144.8,11,0,0,17.86,-524.92
+Grayson McCall,Coastal Carolina,143.9,8,1,0,12.5,-781.8
 Haynes King,Georgia Tech,155.4,16,2,1,12.5,110.99
-Chandler Rogers,North Texas,153.3,8,3,0,10.0,-690.97
 Grant Wilson,Old Dominion,134.8,7,1,0,12.5,-906.51
-Graham Mertz,Florida,165.4,9,2,1,16.67,262.33
-Gunnar Watson,Troy,143.7,10,0,0,16.67,-609.21
-Jordan Travis,Florida State,158.8,12,2,1,25.0,606.84
-DeQuan Finn,Toledo,157.8,12,4,0,20.83,-45.74
+Chandler Rogers,North Texas,155.8,12,3,0,12.5,-473.03
 Carter Bradley,South Alabama,149.2,11,1,0,12.5,-659.86
-Garrett Shrader,Syracuse,142.6,8,6,1,16.67,162.14
-Brayden Fowler-Nicolosi,Colorado State,139.8,11,1,0,10.0,-875.31
-Shedeur Sanders,Colorado,158.0,16,3,1,16.67,365.68
-Taulia Tagovailoa,Maryland,146.5,14,4,1,20.83,417.93
-Seth Henigan,Memphis,147.8,10,3,0,20.0,-282.45
-K.J. Jefferson,Arkansas,150.5,12,1,1,8.33,-251.64
-Grayson McCall,Coastal Carolina,134.0,6,1,0,10.0,-1043.77
-Jacob Zeno,UAB,153.0,12,3,0,8.33,-684.61
-Thomas Castellanos,Boston College,136.8,10,7,1,12.5,2.35
-Dylan Hopkins,New Mexico,134.1,7,1,0,10.0,-1022.23
-Emory Jones,Cincinnati,139.1,10,3,1,10.0,-260.53
-Mitch Griffis,Wake Forest,137.0,9,0,1,15.0,-225.79
-Kurtis Rourke,Ohio,146.9,8,1,0,20.83,-388.44
+Jordan Travis,Florida State,154.1,13,4,1,25.0,664.14
+Shedeur Sanders,Colorado,160.3,21,3,1,14.29,391.46
+Dante Moore,UCLA,129.8,10,0,1,16.67,-216.13
+DeQuan Finn,Toledo,149.3,12,4,0,21.43,-117.53
+Seth Henigan,Memphis,144.7,13,3,0,16.67,-400.39
+Joey Aguilar,Appalachian State,144.5,14,1,0,12.5,-652.55
+Brayden Fowler-Nicolosi,Colorado State,137.7,14,1,0,12.5,-730.49
+Taulia Tagovailoa,Maryland,146.0,16,4,1,17.86,324.79
+K.J. Jefferson,Arkansas,148.9,14,1,1,7.14,-280.47
+Garrett Shrader,Syracuse,135.5,8,6,1,14.29,-21.81
+Dylan Hopkins,New Mexico,130.4,7,1,0,8.33,-1136.44
+Ashton Daniels,Stanford,139.6,7,0,1,8.33,-523.96
+Noah Fifita,Arizona,156.7,8,0,1,14.29,-51.13
+Max Johnson,Texas A&M,133.5,7,1,1,14.29,-292.08
+Jacob Zeno,UAB,148.3,12,4,0,7.14,-744.38
 Will Rogers,Mississippi State,138.7,10,0,1,12.5,-293.59
-Devin Leary,Kentucky,135.2,12,0,1,20.83,66.05
-Joey Aguilar,Appalachian State,141.2,12,1,0,15.0,-623.48
-Tayven Jackson,Indiana,125.2,2,1,1,10.0,-673.82
-Preston Stone,SMU,137.7,11,1,0,15.0,-683.99
-Mikey Keene,Fresno State,147.7,15,0,0,20.83,-281.88
-Byrum Brown,South Florida,134.6,11,7,0,12.5,-554.88
-Joe Milton,Tennessee,139.0,9,4,1,20.0,194.08
-Gavin Hardison,UTEP,120.2,5,2,0,4.17,-1428.25
-Phil Jurkovec,Pitt,124.6,6,1,1,5.0,-814.5
-Treyson Bourguet,Western Michigan,127.9,4,0,0,8.33,-1271.68
-Luke Altmyer,Illinois,126.6,6,3,1,8.33,-557.2
-Taylen Green,Boise State,118.9,5,4,0,12.5,-993.4
-Riley Leonard,Duke,129.8,3,4,1,20.0,-33.76
-Will Howard,Kansas State,129.8,9,6,1,15.0,-35.98
-Michael Alaimo,Kent State,116.1,2,1,0,4.17,-1581.83
-Hudson Card,Purdue,126.7,6,3,1,8.33,-556.06
-Donovan Smith,Houston,135.9,9,3,1,10.0,-317.61
-Rocky Lombardi,Northern Illinois,120.4,5,2,0,8.33,-1246.47
-Ashton Daniels,Stanford,126.3,3,0,1,5.0,-901.59
-Nicholas Vattiato,Middle Tennessee State,132.8,9,1,0,4.17,-1247.62
-Drew Allar,Penn State,141.4,9,2,1,25.0,346.2
+Thomas Castellanos,Boston College,135.5,10,7,1,12.5,-12.55
+Preston Stone,SMU,137.6,14,1,0,16.67,-552.15
+Mikey Keene,Fresno State,147.7,15,0,0,21.43,-256.24
+Byrum Brown,South Florida,133.9,12,7,0,10.71,-619.44
+Chevan Cordeiro,San Jose State,130.4,8,3,0,7.14,-1076.55
+Donovan Smith,Houston,144.5,13,4,1,12.5,15.64
+Phil Jurkovec,Pitt,124.6,6,1,1,8.33,-670.91
+Brayden Schager,Hawaii,137.8,17,1,0,7.14,-898.93
+Luke Altmyer,Illinois,127.7,8,3,1,10.71,-401.24
+Cam Fancher,Marshall,135.0,7,2,0,16.67,-679.34
+Will Howard,Kansas State,130.6,9,6,1,16.67,44.98
+Mitch Griffis,Wake Forest,129.8,9,0,1,12.5,-416.01
+Riley Leonard,Duke,129.8,3,4,1,20.83,2.14
+Nicholas Vattiato,Middle Tennessee State,137.4,11,2,0,7.14,-980.5
+Rocco Becht,Iowa State,134.4,12,2,1,14.29,-134.39
+Devin Leary,Kentucky,130.2,14,1,1,17.86,-33.28
+Emory Jones,Cincinnati,131.2,11,3,1,8.33,-402.49
+Tayven Jackson,Indiana,118.3,2,1,1,8.33,-824.71
+Rocky Lombardi,Northern Illinois,123.4,6,2,0,10.71,-1089.12
+Kyron Drones,Virginia Tech,128.3,6,4,1,10.71,-389.76
+Taylen Green,Boise State,116.1,5,4,0,10.71,-1102.42
+Jack Turner,Louisiana Tech,121.1,5,2,0,9.38,-1193.58
+Jalen Mayden,San Diego State,125.1,6,3,0,10.71,-1024.25
+Joe Milton,Tennessee,133.6,10,3,1,20.83,143.09
+Drew Allar,Penn State,145.3,12,3,1,25.0,497.48
+Kurtis Rourke,Ohio,131.7,8,2,0,17.86,-645.49
 Ta'Quan Roberson,Connecticut,131.6,7,1,0,4.17,-1302.17
 Austin Reed,Western Kentucky,134.2,14,3,0,16.67,-500.35
-Brayden Schager,Hawaii,134.5,14,1,0,8.33,-946.66
-Davis Brin,Georgia Southern,137.9,12,1,0,20.0,-445.92
-Rocco Becht,Iowa State,129.9,10,1,1,12.5,-349.08
-Cam Fancher,Marshall,129.6,6,2,0,20.0,-618.05
-Noah Kim,Michigan State,119.0,6,0,1,10.0,-708.69
-Payton Thorne,Auburn,125.8,4,2,1,15.0,-365.38
-Chevan Cordeiro,San Jose State,122.9,6,3,0,4.17,-1331.52
-Jalen Mayden,San Diego State,120.3,5,3,0,8.33,-1202.23
-Jase Bauer,Central Michigan,117.9,4,6,0,12.5,-934.48
+Noah Kim,Michigan State,119.0,6,0,1,8.33,-780.49
+Andrew Peasley,Wyoming,141.6,12,4,0,17.86,-359.65
+Michael Alaimo,Kent State,111.2,2,1,0,3.57,-1663.64
+Hudson Card,Purdue,121.1,7,3,1,7.14,-651.13
 Heinrich Haarberg,Nebraska,116.9,4,3,1,12.5,-529.7
+Davis Brin,Georgia Southern,130.3,12,1,0,16.67,-676.63
 Cade Klubnik,Clemson,135.4,11,3,1,16.67,4.63
-Gavin Wimsatt,Rutgers,117.4,6,4,1,16.67,-258.3
-Andrew Peasley,Wyoming,135.4,9,3,0,20.83,-409.09
-E.J. Warner,Temple,121.3,12,0,0,8.33,-1184.16
-Tanner Mordecai,Wisconsin,120.6,3,4,1,20.0,-139.22
+Gavin Wimsatt,Rutgers,114.2,7,4,1,17.86,-223.3
+E.J. Warner,Temple,121.3,12,0,0,7.14,-1235.44
+Jase Bauer,Central Michigan,112.2,4,7,0,14.29,-877.51
+Payton Thorne,Auburn,118.6,4,2,1,12.5,-555.6
 Billy Wiles,Southern Mississippi,112.7,7,1,0,4.17,-1518.82
-Brennan Armstrong,North Carolina State,112.5,5,3,1,16.67,-380.25
-Austin Smith,Eastern Michigan,119.1,5,1,0,12.5,-1127.28
-Kyron Drones,Virginia Tech,114.8,4,4,1,8.33,-687.87
-Cole Snyder,Buffalo,123.0,11,0,0,8.33,-1185.07
+Tanner Mordecai,Wisconsin,118.8,3,4,1,16.67,-303.44
+Alan Bowman,Oklahoma State,112.6,4,1,1,16.67,-490.28
+Brennan Armstrong,North Carolina State,112.5,5,3,1,14.29,-482.82
+Daniel Richardson,Florida Atlantic,121.7,5,0,0,12.5,-1142.86
+Jiya Wright,Louisiana-Monroe,114.1,6,1,0,8.33,-1343.68
 Athan Kaliakmanis,Minnesota,110.8,6,2,1,12.5,-604.22
-Layne Hatcher,Ball State,126.0,4,1,0,4.17,-1427.55
-Jiya Wright,Louisiana-Monroe,108.9,5,1,0,10.0,-1351.89
+Keegan Shoemaker,Sam Houston,116.2,6,0,0,0.0,-1723.97
+Austin Smith,Eastern Michigan,114.5,6,1,0,14.29,-1082.69
 Ben Bryant,Northwestern,115.9,6,2,1,12.5,-545.76
-Keegan Shoemaker,Sam Houston,110.8,4,0,0,0.0,-1826.67
-Sam Jackson,California,113.6,5,1,1,12.5,-637.91
-Cade McNamara,Iowa,106.2,4,0,1,20.83,-429.55
-Alan Bowman,Oklahoma State,100.3,2,1,1,15.0,-743.86
-Alex Flinn,East Carolina,89.0,1,0,0,5.0,-1922.36
-Demarcus Irons Jr.,Akron,114.7,3,2,0,4.17,-1532.09
-Brendon Lewis,Nevada,93.8,0,2,0,0.0,-2012.34
-Daniel Richardson,Florida Atlantic,99.4,2,0,0,10.0,-1567.37
+Brendon Lewis,Nevada,102.4,2,3,0,0.0,-1827.58
+Cole Snyder,Buffalo,116.7,11,1,0,7.14,-1263.18
+Alex Flinn,East Carolina,85.5,1,0,0,4.17,-1998.38
