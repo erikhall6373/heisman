@@ -45,15 +45,18 @@ app_ui = ui.page_fluid(
         ui.markdown(
             """
             # So how does this model work anyway?
-            This is a project that I spent the summer of 2020 on in my free time.
+            This is a project initially created in the loads of free time that existed in the summer of 2020. And now
+            has taken on a collaborative work effort in the creation of the product.
             <br />
 
-            Simply put, the model aims to predict the finals standings in Heisman voting for quarterbacks
-            specifically. This is mostly because it is difficult to come up with a sample of metrics that apply
-            to the different positions across college football.
+            Simply put, the model aims to predict the final standings for the most prestigous indivdual award in 
+            collegiate football, specifically for quarterbacks. For legal purposes, this project does not explicitly call
+            out the name of the award. As a hint, the award is named after the man that coached Georgia Tech to a 222-0 victory
+            against Cumberland in 1916. It is worth note that the model focuses on quarterbacks only,
+            as it is difficult to come up with a sample of metrics that apply to the different positions across college football.
             <br />
 
-            The model itself is a linear regression with voting points as a response, and individual and team
+            The model itself is a linear regression with award voting points as a response, and individual and team
             statitistics as the predictors. The model is built with training data from the 2006 to 2018 seasons.
             <br />
 
