@@ -1,4 +1,4 @@
-// Shinylive 0.2.1
+// Shinylive 0.1.3
 // Copyright 2023 RStudio, PBC
 
 // node_modules/js-yaml/dist/js-yaml.mjs
@@ -2658,19 +2658,8 @@ var safeLoad = renamed("safeLoad", "load");
 var safeLoadAll = renamed("safeLoadAll", "loadAll");
 var safeDump = renamed("safeDump", "dump");
 
-// src/utils.ts
-function engineSwitch(engine, rValue, pythonValue) {
-  switch (engine) {
-    case "r":
-      return rValue;
-    case "python":
-    default:
-      return pythonValue;
-  }
-}
-
 // src/parse-codeblock.ts
-function parseCodeBlock(codeblock, engine) {
+function parseCodeBlock(codeblock) {
   if (!Array.isArray(codeblock)) {
     codeblock = codeblock.split("\n");
   }
@@ -2689,14 +2678,14 @@ function parseCodeBlock(codeblock, engine) {
         "Shinylive application code blocks must have a '#| standalone: true' argument. In the future other values will be supported."
       );
     }
-    defaultFilename = engineSwitch(engine, "app.R", "app.py");
+    defaultFilename = "app.py";
   } else {
     if (quartoArgs.standalone !== false) {
       throw new Error(
         "'#| standalone: true' is not valid for editor-terminal and editor-cell code blocks."
       );
     }
-    defaultFilename = engineSwitch(engine, "code.R", "code.py");
+    defaultFilename = "code.py";
   }
   const files = parseFileContents(lines, defaultFilename);
   return { files, quartoArgs };
@@ -2785,19 +2774,16 @@ function parseFileContents(lines, defaultFilename) {
 
 // src/run-python-blocks.ts
 import { runApp } from "./shinylive.js";
-var blocks = document.querySelectorAll(
-  ".shinylive-python, .shinylive-r"
-);
+var blocks = document.querySelectorAll(".shinylive-python");
 blocks.forEach((block) => {
   const container = document.createElement("div");
   container.className = "shinylive-wrapper";
-  const engine = block.classList.contains("shinylive-r") ? "r" : "python";
   container.style.cssText = block.style.cssText;
   block.parentNode.replaceChild(container, block);
-  const { files, quartoArgs } = parseCodeBlock(block.innerText, engine);
+  const { files, quartoArgs } = parseCodeBlock(block.innerText);
   const appMode = convertComponentArrayToAppMode(quartoArgs.components);
   const opts = { startFiles: files, ...quartoArgs };
-  runApp(container, appMode, opts, engine);
+  runApp(container, appMode, opts);
 });
 function convertComponentArrayToAppMode(components) {
   if (typeof components === "string") {
