@@ -1,108 +1,112 @@
 Player,School,Passing_Rate,Passing_TD,Rushing_TD,Power5,CPI
-Jayden Daniels,LSU,204.3,25,5,1,9.974634146341463
-J.J. McCarthy,Michigan,199.1,18,3,1,20.13031914893617
-Jalen Milroe,Alabama,175.0,13,5,1,15.922885633185272
-Michael Penix Jr.,Washington,176.8,20,0,1,16.569484936831877
-Jaxson Dart,Ole Miss,167.6,13,6,1,17.177229476137693
-Kaidon Salter,Liberty,171.2,16,6,0,12.70949720670391
-Caleb Williams,USC,179.4,23,7,1,6.703767123287671
-Diego Pavia,New Mexico State,164.6,16,4,0,1.1675485510544683
-Kyle McCord,Ohio State,161.6,12,0,1,28.301183823087555
-Tyler Van Dyke,Miami (FL),171.8,16,1,1,5.643619240477542
-Brady Cook,Missouri,166.2,15,5,1,16.642714546235815
-Carson Beck,Georgia,163.8,12,3,1,15.038162782843633
-Dillon Gabriel,Oklahoma,172.4,19,5,1,22.166644435552
-Jack Plummer,Louisville,153.2,13,1,1,9.731000110526647
-Sam Hartman,Notre Dame,166.9,18,2,1,12.95572314049587
-Jordan McCloud,James Madison,164.0,15,3,0,20.2592122161288
-Cardell Williams,Tulsa,149.5,9,3,0,1.1968577240169096
-Bo Nix,Oregon,180.2,19,2,1,10.461423069184837
-Quinn Ewers,Texas,163.7,13,5,1,20.52523937048454
-JT Daniels,Rice,157.9,17,1,0,1.5789415698318428
-D.J. Uiagalelei,Oregon State,158.9,15,5,1,14.51189990370503
-Drake Maye,North Carolina,152.0,14,5,1,9.644160407777111
-TJ Finley,Texas State,160.5,14,3,0,3.4546821567049517
-Carter Bradley,South Alabama,152.9,11,1,0,2.7289655304497593
-Brett Gabbert,Miami (OH),152.1,14,2,0,3.510318396226416
-Darren Grainger,Georgia State,158.3,10,5,0,10.320320364606074
-Cooper Legas,Utah State,159.7,13,0,0,0.9942225817438692
-Garrett Greene,West Virginia,141.8,8,5,1,3.103821202655275
-Cameron Ward,Washington State,158.6,15,3,1,3.980191212857214
-Grayson McCall,Coastal Carolina,148.7,10,1,0,4.22967676939348
-Graham Mertz,Florida,163.7,12,2,1,4.968607098201787
-Gunnar Watson,Troy,144.8,11,0,0,8.174801175376903
-Jayden Maiava,UNLV,144.3,5,1,0,6.771908683913537
-Spencer Rattler,South Carolina,152.1,11,2,1,0.7923029490893683
-Grant Wilson,Old Dominion,137.6,8,1,0,1.6255901231364351
-Haynes King,Georgia Tech,145.8,17,3,1,1.752823337157551
-Keyone Jenkins,Florida International,130.8,6,5,0,0.8000032407124991
-Shedeur Sanders,Colorado,160.3,21,3,1,2.853836284017961
-Chandler Rogers,North Texas,152.4,14,3,0,0.8253968253968254
-Jordan Travis,Florida State,153.4,15,5,1,24.351795883307354
-Joey Aguilar,Appalachian State,146.7,16,2,0,1.0566067270628288
-Dante Moore,UCLA,129.6,10,0,1,9.945490983227872
-Dylan Hopkins,New Mexico,138.5,10,1,0,0.6259031522051081
-Taulia Tagovailoa,Maryland,146.0,16,4,1,4.544537381887678
-Thomas Castellanos,Boston College,133.9,10,9,1,3.751275163030779
-Garrett Shrader,Syracuse,135.5,8,6,1,3.147348355199782
-Brayden Fowler-Nicolosi,Colorado State,137.7,15,1,0,0.89905945585315
-Preston Stone,SMU,139.8,16,2,0,3.667664909376785
-Chandler Morris,TCU,144.6,12,3,1,2.4408320481074424
-Josh Hoover,TCU,121.6,6,0,1,2.4408320481074424
-DeQuan Finn,Toledo,146.2,14,5,0,5.884803921568629
-Noah Fifita,Arizona,156.7,8,0,1,3.0185769703394922
-Zeon Chriss,Louisiana,142.4,8,5,0,2.267659620747707
-Max Johnson,Texas A&M,133.5,7,1,1,3.137751173566289
-Donovan Smith,Houston,146.4,16,4,1,1.0417018046888176
-Jacob Zeno,UAB,148.3,12,4,0,0.2920264315638792
-Seth Henigan,Memphis,144.1,15,3,0,5.451615686924568
-Will Rogers,Mississippi State,138.7,10,0,1,2.278836387429575
-Will Howard,Kansas State,136.7,12,6,1,8.65195833749293
-Nicholas Vattiato,Middle Tennessee State,140.9,15,2,0,0.32283173510308805
-Mikey Keene,Fresno State,147.7,15,0,0,4.445968436917406
-Chevan Cordeiro,San Jose State,134.0,11,3,0,1.0094977513472103
-Ashton Daniels,Stanford,132.5,8,0,1,0.4639810079653254
-Mitch Griffis,Wake Forest,129.8,9,0,1,1.991348705819352
-Brayden Schager,Hawaii,136.1,20,1,0,0.19685039370078738
-K.J. Jefferson,Arkansas,139.3,14,1,1,0.32937059338170965
-Rocco Becht,Iowa State,134.4,12,2,1,4.81485800669474
-Devin Leary,Kentucky,130.2,14,1,1,5.62163978236347
-Tayven Jackson,Indiana,118.3,2,1,1,0.4445529778863112
-Byrum Brown,South Florida,130.1,12,8,0,1.8603814713896458
-Cam Fancher,Marshall,130.5,7,2,0,3.894664564427331
-Luke Altmyer,Illinois,128.2,10,3,1,1.2195191149918232
-Kyron Drones,Virginia Tech,128.3,6,4,1,1.4122062165210492
-Taylen Green,Boise State,116.1,5,4,0,1.2781258410797862
-Jack Turner,Louisiana Tech,121.1,5,2,0,0.38477120535714293
-Cade Klubnik,Clemson,136.6,13,3,1,4.555606703834415
-Joe Milton,Tennessee,134.8,12,4,1,8.38925491763476
-Kurtis Rourke,Ohio,131.2,9,2,0,3.3442120639577895
-Riley Leonard,Duke,122.7,3,4,1,10.010072093508574
-Emory Jones,Cincinnati,131.1,13,3,1,0.39544446969782854
-Andrew Peasley,Wyoming,141.6,12,4,0,8.420303867589094
-Kedon Slovis,Brigham Young,127.1,12,3,1,2.74131640821619
-Rocky Lombardi,Northern Illinois,120.8,6,3,0,1.9415680473372776
-Jalen Mayden,San Diego State,121.3,6,3,0,0.8649695121951221
-Hudson Card,Purdue,121.1,7,3,1,0.5639396833781962
-Davis Brin,Georgia Southern,129.1,14,1,0,4.404091725126484
-Austin Reed,Western Kentucky,129.1,16,3,0,3.4077859105991393
-Drew Allar,Penn State,134.7,13,3,1,15.014073354209406
-Ta'Quan Roberson,Connecticut,126.0,8,2,0,0.04325586789683539
-Michael Alaimo,Kent State,108.3,2,1,0,0.020571259954145934
-Payton Thorne,Auburn,121.1,5,2,1,1.631592896899019
-E.J. Warner,Temple,121.3,12,0,0,0.152734375
-Gavin Wimsatt,Rutgers,111.2,7,7,1,6.088033536585366
-Tanner Mordecai,Wisconsin,118.8,3,4,1,6.979391933163277
-Connor Bazelak,Bowling Green State,113.7,5,1,0,2.4084452386109305
-Heinrich Haarberg,Nebraska,112.1,5,4,1,3.4088177841410534
-Jase Bauer,Central Michigan,112.7,5,7,0,1.153426350761602
-Alan Bowman,Oklahoma State,115.3,6,1,1,8.025767196053387
-Billy Wiles,Southern Mississippi,111.1,7,1,0,0.05560869784110101
-Brennan Armstrong,North Carolina State,112.5,5,3,1,3.4763538943539367
-Jiya Wright,Louisiana-Monroe,114.3,7,1,0,0.2968165937542732
-Austin Smith,Eastern Michigan,110.8,6,1,0,0.9711446691912194
-Cole Snyder,Buffalo,115.7,12,1,0,0.6341475474683544
-Daniel Richardson,Florida Atlantic,113.8,5,0,0,1.072337786999111
-Athan Kaliakmanis,Minnesota,106.4,6,2,1,4.875439891464538
-Brendon Lewis,Nevada,99.5,2,3,0,0.06500455418979795
-Alex Flinn,East Carolina,88.7,2,0,0,0.04224725758862088
+Jayden Daniels,LSU,204.3,25,5,1,9.617784957389551
+J.J. McCarthy,Michigan,199.1,18,3,1,18.144552228786253
+Jalen Milroe,Alabama,175.0,13,5,1,16.109068203816374
+Jaylen Raynor,Arkansas State,167.4,13,3,0,1.4031098505864308
+Michael Penix Jr.,Washington,175.5,24,0,1,15.536105032822759
+Kaidon Salter,Liberty,176.2,19,7,0,13.400270457746233
+Jaxson Dart,Ole Miss,165.4,14,7,1,16.61514146967003
+Michael Pratt,Tulane,180.7,14,4,0,10.070949250448747
+Caleb Williams,USC,175.4,25,9,1,7.702848629997096
+Carson Beck,Georgia,166.2,14,3,1,14.624546480502158
+Kyle McCord,Ohio State,160.1,14,0,1,25.852025682070806
+Brady Cook,Missouri,166.2,15,5,1,14.800093404808315
+Sam Hartman,Notre Dame,165.3,18,2,1,12.793621930859944
+Dillon Gabriel,Oklahoma,169.9,19,8,1,14.705489167069965
+Diego Pavia,New Mexico State,159.8,17,5,0,1.517924669637716
+Drake Maye,North Carolina,156.1,16,6,1,5.793060859403219
+Jordan McCloud,James Madison,162.1,18,4,0,19.096209912536445
+Jack Plummer,Louisville,151.5,13,1,1,11.897755810361872
+Quinn Ewers,Texas,163.7,13,5,1,17.914152145385742
+Cardell Williams,Tulsa,151.6,10,3,0,0.7973211827407176
+Bo Nix,Oregon,178.6,21,3,1,11.85118994430048
+Jason Bean,Kansas,152.5,9,1,1,9.178360323110311
+Tyler Van Dyke,Miami (FL),161.5,16,1,1,6.019188030706281
+JT Daniels,Rice,155.2,19,1,0,1.2272169446843326
+Gunnar Watson,Troy,149.2,14,1,0,9.141609146424056
+D.J. Uiagalelei,Oregon State,155.6,17,5,1,8.215485766678832
+Brett Gabbert,Miami (OH),152.1,14,2,0,5.020270371470941
+Cooper Legas,Utah State,159.7,13,0,0,0.9919801398167761
+Grayson McCall,Coastal Carolina,148.7,10,1,0,5.776362250438248
+TJ Finley,Texas State,154.4,15,3,0,2.890131263644035
+Carter Bradley,South Alabama,148.4,13,1,0,1.84999027637961
+Joey Aguilar,Appalachian State,153.9,20,2,0,1.2834643879823642
+Preston Stone,SMU,150.9,19,2,0,3.585768469254517
+Haynes King,Georgia Tech,151.6,21,3,1,3.022707989103738
+Garrett Greene,West Virginia,138.3,8,8,1,3.9218284602799907
+Graham Mertz,Florida,161.8,14,3,1,3.626922810421286
+Jordan Travis,Florida State,156.7,18,6,1,20.09628546540568
+Jayden Maiava,UNLV,142.0,7,1,0,5.437359480755663
+Cameron Ward,Washington State,153.9,16,5,1,2.074815853493715
+Chandler Rogers,North Texas,155.5,19,3,0,0.5839349794941899
+Grant Wilson,Old Dominion,141.5,10,1,0,1.518037673309234
+Seth Henigan,Memphis,148.7,16,3,0,6.337771698847422
+Spencer Rattler,South Carolina,147.5,12,2,1,0.44917553926991144
+Darren Grainger,Georgia State,148.6,12,5,0,7.390121047176273
+Keyone Jenkins,Florida International,127.6,6,5,0,0.7060525553186078
+Dante Moore,UCLA,129.6,10,0,1,9.64917634662829
+Dylan Hopkins,New Mexico,134.2,11,1,0,0.43648167006109995
+Frank Harris,UTSA,146.9,13,1,0,1.955008613582628
+Noah Fifita,Arizona,160.4,11,0,1,4.550298272839033
+Max Johnson,Texas A&M,136.3,8,1,1,3.7988533110703084
+Garrett Shrader,Syracuse,136.7,9,6,1,1.6566619050601665
+Zeon Chriss,Louisiana,148.0,10,5,0,2.9978721163663233
+Shedeur Sanders,Colorado,154.4,22,3,1,2.2732173890981975
+Will Howard,Kansas State,142.3,14,6,1,9.164135101585275
+Thomas Castellanos,Boston College,132.9,11,9,1,4.085881002640107
+Chandler Morris,TCU,144.6,12,3,1,2.3363431151241536
+Josh Hoover,TCU,121.6,6,0,1,2.3363431151241536
+DeQuan Finn,Toledo,146.2,14,5,0,6.812910697684246
+Brayden Fowler-Nicolosi,Colorado State,136.0,16,1,0,0.7010094707330415
+Jacob Zeno,UAB,148.3,12,4,0,0.32068691240541164
+Devin Leary,Kentucky,136.6,16,1,1,4.05597851232717
+Will Rogers,Mississippi State,138.7,10,0,1,1.5796617547598493
+Taulia Tagovailoa,Maryland,143.4,19,4,1,2.5899631906799176
+Nicholas Vattiato,Middle Tennessee State,140.9,15,2,0,0.3013686950815212
+Joe Milton,Tennessee,139.8,13,4,1,9.41162109375
+Chevan Cordeiro,San Jose State,134.0,11,3,0,1.4500534065452142
+Rocco Becht,Iowa State,133.8,13,2,1,5.35834170003266
+Ashton Daniels,Stanford,132.0,9,2,1,0.37198379999545583
+Taylen Green,Boise State,119.4,6,5,0,2.314425600890298
+Brayden Schager,Hawaii,136.1,20,1,0,0.12968356534693654
+Donovan Smith,Houston,138.7,16,4,1,0.7915818564229137
+Mikey Keene,Fresno State,146.6,19,0,0,6.6023544879137015
+Kurtis Rourke,Ohio,132.7,10,2,0,3.30833021710917
+K.J. Jefferson,Arkansas,139.3,14,1,1,0.31130246477693924
+Kyron Drones,Virginia Tech,130.5,7,4,1,1.9365461892721685
+Tayven Jackson,Indiana,118.3,2,1,1,0.3271683673469388
+Byrum Brown,South Florida,130.1,12,8,0,1.7974004844047549
+Luke Altmyer,Illinois,128.2,10,3,1,1.1782744519511101
+Mitch Griffis,Wake Forest,125.6,9,0,1,1.7358648646646366
+Jack Turner,Louisiana Tech,121.1,5,2,0,0.3141306578330206
+Cam Fancher,Marshall,126.2,7,2,0,2.561406854282923
+Emory Jones,Cincinnati,128.1,13,3,1,0.2743289143912413
+Payton Thorne,Auburn,132.5,8,2,1,2.6221054434793127
+Davis Brin,Georgia Southern,132.6,17,1,0,6.15621558370044
+Heinrich Haarberg,Nebraska,120.6,7,4,1,3.931576393604172
+Austin Reed,Western Kentucky,133.6,20,3,0,2.756866130958241
+Rocky Lombardi,Northern Illinois,120.8,6,3,0,1.9158692260502739
+Jalen Mayden,San Diego State,121.3,6,3,0,0.8486257639903966
+Riley Leonard,Duke,116.0,3,4,1,6.941343104732745
+Cade Klubnik,Clemson,130.8,13,3,1,2.602732654185022
+Kedon Slovis,Brigham Young,122.1,12,3,1,2.6767013592331206
+Drew Allar,Penn State,136.1,16,3,1,15.535073698631782
+Andrew Peasley,Wyoming,135.5,13,4,0,5.340610392079221
+Michael Alaimo,Kent State,108.3,2,1,0,0.020380553432620453
+E.J. Warner,Temple,121.3,12,0,0,0.15194072420634921
+Alan Bowman,Oklahoma State,117.9,8,1,1,8.473029241704962
+Ta'Quan Roberson,Connecticut,121.9,8,2,0,0.026970704185770404
+Billy Wiles,Southern Mississippi,113.1,8,1,0,0.03366282676031822
+Gavin Wimsatt,Rutgers,111.2,7,7,1,6.0703125
+Tanner Mordecai,Wisconsin,118.8,3,4,1,5.361768934461805
+Connor Bazelak,Bowling Green State,113.7,5,1,0,2.590704148443759
+Hudson Card,Purdue,115.7,8,3,1,0.35572131230810916
+Austin Smith,Eastern Michigan,114.5,7,1,0,0.741358539523677
+Jase Bauer,Central Michigan,112.7,5,7,0,1.0458350483246441
+Athan Kaliakmanis,Minnesota,111.2,7,2,1,5.568462563104702
+Brennan Armstrong,North Carolina State,112.5,5,3,1,4.128002797064431
+Jiya Wright,Louisiana-Monroe,114.3,7,1,0,0.18188747228381374
+Daniel Richardson,Florida Atlantic,121.2,8,0,0,1.35470254583828
+Cole Snyder,Buffalo,115.7,12,1,0,0.6404284053610503
+Brendon Lewis,Nevada,99.4,2,3,0,0.3298927260109024
+Alex Flinn,East Carolina,93.2,4,0,0,0.026840377106438343
