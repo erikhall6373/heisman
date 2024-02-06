@@ -1,4 +1,4 @@
-// Shinylive 0.2.5
+// Shinylive 0.2.6
 // Copyright 2024 RStudio, PBC
 
 // src/utils.ts

@@ -1,4 +1,4 @@
-// Shinylive 0.2.5
+// Shinylive 0.2.6
 // Copyright 2024 RStudio, PBC
 import {
   FCJSONtoFC,
@@ -21,7 +21,7 @@ import {
   sleep,
   stringToUint8Array,
   uint8ArrayToString
-} from "./chunk-QZLEMOZJ.js";
+} from "./chunk-7GM7ARTS.js";
 
 // node_modules/scheduler/cjs/scheduler.development.js
 var require_scheduler_development = __commonJS({
