@@ -14,7 +14,6 @@ model_data_path = app_path + "/Model_Data.csv"
 weekly_data_path = app_path  + "/Weekly_Data.csv"
 top_ten_html_path = app_path  + "/weekly.html"
 
-
 model = pd.read_pickle(model_path)
 with open(top_ten_html_path, 'r') as file:
     top_ten_html = file.read()
@@ -95,7 +94,6 @@ app_ui = ui.page_fluid(
                ),
 
     ui.nav("Current Model Results", 
-           
         ui.output_table("current_data")
                ),
     
@@ -118,8 +116,6 @@ app_ui = ui.page_fluid(
            )       
     )
 )
-
-
 
 
 # Part 2: server ----
