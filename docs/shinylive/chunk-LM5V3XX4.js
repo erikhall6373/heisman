@@ -1,11 +1,3 @@
-<<<<<<<< Updated upstream:docs/shinylive/chunk-ZBWGEFNY.js
-// Shinylive 0.5.0
-// Copyright 2024 Posit, PBC
-import {
-  __commonJS,
-  __toESM
-} from "./chunk-BQSUMDFT.js";
-========
 // Shinylive 0.1.3
 // Copyright 2023 RStudio, PBC
 var __create = Object.create;
@@ -58,7 +50,6 @@ var __privateMethod = (obj, member, method) => {
   __accessCheck(obj, member, "access private method");
   return method;
 };
->>>>>>>> Stashed changes:docs/shinylive/chunk-LM5V3XX4.js
 
 // node_modules/react/cjs/react.development.js
 var require_react_development = __commonJS({
@@ -3527,55 +3518,14 @@ function fileContentsToUrlString(fileContents, sort = true) {
     JSON.stringify(fileContents.map(FCtoFCJSON))
   );
 }
-async function fileContentsToUrlStringInWebWorker(fileContents, sort = true) {
-  if (sort) {
-    fileContents.sort((a, b) => a.name.localeCompare(b.name));
-  }
-  const fileContentJsonString = JSON.stringify(fileContents.map(FCtoFCJSON));
-  return await encodeLzstringWebWorker(fileContentJsonString);
-}
-var _lzstringWebWorker = null;
-function ensureLzstringWebWorker() {
-  if (_lzstringWebWorker === null) {
-    _lzstringWebWorker = new Worker(
-      currentScriptDir() + "/lzstring-worker.js",
-      { type: "module" }
-    );
-  }
-  return _lzstringWebWorker;
-}
-async function encodeLzstringWebWorker(value) {
-  const response = await postMessageLzstringWebWorker({
-    type: "encode",
-    value
-  });
-  return response.value;
-}
-async function postMessageLzstringWebWorker(msg) {
-  const worker = ensureLzstringWebWorker();
-  return new Promise((onSuccess) => {
-    const channel = new MessageChannel();
-    channel.port1.onmessage = (e) => {
-      channel.port1.close();
-      const msg2 = e.data;
-      onSuccess(msg2);
-    };
-    worker.postMessage(msg, [channel.port2]);
-  });
-}
 
 export {
-<<<<<<<< Updated upstream:docs/shinylive/chunk-ZBWGEFNY.js
-  require_lz_string,
-  require_react,
-========
   __require,
   __commonJS,
   __toESM,
   __publicField,
   __privateAdd,
   __privateMethod,
->>>>>>>> Stashed changes:docs/shinylive/chunk-LM5V3XX4.js
   sleep,
   makeRandomKey,
   currentScriptDir,
@@ -3592,8 +3542,7 @@ export {
   require_lz_string,
   editorUrlPrefix,
   appUrlPrefix,
-  fileContentsToUrlString,
-  fileContentsToUrlStringInWebWorker
+  fileContentsToUrlString
 };
 /*! Bundled license information:
 

@@ -1,10 +1,5 @@
-<<<<<<< Updated upstream
-// Shinylive 0.5.0
-// Copyright 2024 Posit, PBC
-=======
 // Shinylive 0.1.3
 // Copyright 2023 RStudio, PBC
->>>>>>> Stashed changes
 
 // node_modules/js-yaml/dist/js-yaml.mjs
 function isNothing(subject) {

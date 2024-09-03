@@ -108,7 +108,6 @@ app_ui = ui.page_fluid(
         ui.input_numeric("what_if_CPI", "CPI", value=0.0),
         ui.output_text("what_if_analysis")
                ),
-    
     ui.nav("Scatter",
            ui.div(
            output_widget("my_widget")

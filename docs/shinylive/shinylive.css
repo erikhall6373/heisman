@@ -1,10 +1,5 @@
-<<<<<<< Updated upstream
-/* Shinylive 0.5.0
-// Copyright 2024 Posit, PBC */
-=======
 /* Shinylive 0.1.3
 // Copyright 2023 RStudio, PBC */
->>>>>>> Stashed changes
 /* src/Components/App.css */
 :root {
   --colors-grey: grey;
@@ -54,7 +49,6 @@
 }
 .shinylive-container.viewer {
   --pad: 0;
-  min-width: unset;
 }
 .shinylive-container > div {
   border-radius: var(--panel-roundness);
@@ -113,9 +107,6 @@ button:disabled {
   color: #666;
 }
 .shinylive-container.editor-cell .editor-container {
-  padding: 0;
-}
-.shinylive-container.editor-cell .cm-scroller {
   padding: 12px 12px 4px 12px;
 }
 
@@ -725,7 +716,7 @@ div#size-detection-cell {
   grid-template-areas: "header" "editor";
   position: relative;
 }
-.ResizableGrid.editor-viewer.layout-vertical:not(.been-dragged) > .shinylive-editor {
+.ResizableGrid.editor-viewer:not(.been-dragged) > .shinylive-editor {
   max-height: 800px;
 }
 .editor-header {
