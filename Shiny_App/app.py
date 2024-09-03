@@ -6,12 +6,18 @@ import statsmodels.api as sm
 from shinywidgets import output_widget, render_widget
 import plotly.express as px
 from pathlib import Path
+import os
 
-model_path = Path(__file__).parent / "heisman_model.pkl"
-model_data_path = Path(__file__).parent / "Model_Data.csv"
-weekly_data_path = Path(__file__).parent / "Weekly_Data.csv"
+app_path = os.path.dirname(os.path.abspath("__file__")) + "\Shiny_App"
+model_path =  app_path + "\heisman_model.pkl"
+model_data_path = app_path + "\Model_Data.csv"
+weekly_data_path = app_path  + "\Weekly_Data.csv"
+top_ten_html_path = app_path  + "\weekly.html"
 
-model = pickle.load(open(model_path, 'rb'))
+
+model = pd.read_pickle(model_path)
+with open(top_ten_html_path, 'r') as file:
+    top_ten_html = file.read()
 ################### Historical #########################
 model_data = pd.read_csv(model_data_path).reset_index(drop = True)
 
@@ -107,7 +113,10 @@ app_ui = ui.page_fluid(
            ui.div(
            output_widget("my_widget")
            )
-           )
+           ),
+    ui.nav("Top 10",
+           ui.HTML(top_ten_html)
+           )       
     )
 )
 

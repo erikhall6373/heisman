@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 // Shinylive 0.5.0
 // Copyright 2024 Posit, PBC
 var __require = /* @__PURE__ */ ((x2) => typeof require !== "undefined" ? require : typeof Proxy !== "undefined" ? new Proxy(x2, {
@@ -7,6 +8,10 @@ var __require = /* @__PURE__ */ ((x2) => typeof require !== "undefined" ? requir
     return require.apply(this, arguments);
   throw Error('Dynamic require of "' + x2 + '" is not supported');
 });
+=======
+// Shinylive 0.1.3
+// Copyright 2023 RStudio, PBC
+>>>>>>> Stashed changes
 
 // src/assets/shinylive-inject-socket.txt
 var shinylive_inject_socket_default = '// src/messageportwebsocket.ts\nvar MessagePortWebSocket = class extends EventTarget {\n  constructor(port) {\n    super();\n    this.readyState = 0;\n    this.addEventListener("open", (e) => {\n      if (this.onopen) {\n        this.onopen(e);\n      }\n    });\n    this.addEventListener("message", (e) => {\n      if (this.onmessage) {\n        this.onmessage(e);\n      }\n    });\n    this.addEventListener("error", (e) => {\n      if (this.onerror) {\n        this.onerror(e);\n      }\n    });\n    this.addEventListener("close", (e) => {\n      if (this.onclose) {\n        this.onclose(e);\n      }\n    });\n    this._port = port;\n    port.addEventListener("message", this._onMessage.bind(this));\n    port.start();\n  }\n  // Call on the server side of the connection, to tell the client that\n  // the connection has been established.\n  accept() {\n    if (this.readyState !== 0) {\n      return;\n    }\n    this.readyState = 1;\n    this._port.postMessage({ type: "open" });\n  }\n  send(data) {\n    if (this.readyState === 0) {\n      throw new DOMException(\n        "Can\'t send messages while WebSocket is in CONNECTING state",\n        "InvalidStateError"\n      );\n    }\n    if (this.readyState > 1) {\n      return;\n    }\n    this._port.postMessage({ type: "message", value: { data } });\n  }\n  close(code, reason) {\n    if (this.readyState > 1) {\n      return;\n    }\n    this.readyState = 2;\n    this._port.postMessage({ type: "close", value: { code, reason } });\n    this.readyState = 3;\n    this.dispatchEvent(new CloseEvent("close", { code, reason }));\n  }\n  _onMessage(e) {\n    const event = e.data;\n    switch (event.type) {\n      case "open":\n        if (this.readyState === 0) {\n          this.readyState = 1;\n          this.dispatchEvent(new Event("open"));\n          return;\n        }\n        break;\n      case "message":\n        if (this.readyState === 1) {\n          this.dispatchEvent(new MessageEvent("message", { ...event.value }));\n          return;\n        }\n        break;\n      case "close":\n        if (this.readyState < 3) {\n          this.readyState = 3;\n          this.dispatchEvent(new CloseEvent("close", { ...event.value }));\n          return;\n        }\n        break;\n    }\n    this._reportError(\n      `Unexpected event \'${event.type}\' while in readyState ${this.readyState}`,\n      1002\n    );\n  }\n  _reportError(message, code) {\n    this.dispatchEvent(new ErrorEvent("error", { message }));\n    if (typeof code === "number") {\n      this.close(code, message);\n    }\n  }\n};\n\n// src/shinylive-inject-socket.ts\nwindow.Shiny.createSocket = function() {\n  const channel = new MessageChannel();\n  window.parent.postMessage(\n    {\n      type: "openChannel",\n      // Infer app name from path: "/foo/app_abc123/"" => "app_abc123"\n      appName: window.location.pathname.replace(\n        new RegExp(".*/([^/]+)/$"),\n        "$1"\n      ),\n      path: "/websocket/"\n    },\n    "*",\n    [channel.port2]\n  );\n  return new MessagePortWebSocket(channel.port1);\n};\n';
@@ -29,6 +34,7 @@ function uint8ArrayToString(buf) {
   return result;
 }
 
+<<<<<<< Updated upstream
 // node_modules/webr/dist/webr.mjs
 var tn = Object.create;
 var Qr = Object.defineProperty;
@@ -2084,6 +2090,8 @@ var f;
 var mt;
 g = /* @__PURE__ */ new WeakMap(), f = /* @__PURE__ */ new WeakMap(), mt = /* @__PURE__ */ new WeakMap();
 
+=======
+>>>>>>> Stashed changes
 // src/messageporthttp.ts
 async function fetchASGI(client, resource, init, filter = (bodyChunk) => bodyChunk) {
   if (typeof resource === "string" || typeof init !== "undefined") {
@@ -2185,6 +2193,7 @@ function asgiToRes(res, body) {
 
 // src/shinylive-sw.ts
 var useCaching = false;
+<<<<<<< Updated upstream
 var cacheName = "::shinyliveServiceworker";
 var version = "v8";
 function addCoiHeaders(resp) {
@@ -2198,6 +2207,10 @@ function addCoiHeaders(resp) {
     headers
   });
 }
+=======
+var cacheName = "::prismExperimentsServiceworker";
+var version = "v6";
+>>>>>>> Stashed changes
 self.addEventListener("install", (event) => {
   event.waitUntil(
     Promise.all([self.skipWaiting(), caches.open(version + cacheName)])
@@ -2235,7 +2248,6 @@ self.addEventListener("fetch", function(event) {
     );
     return;
   }
-  const coiRequested = url.searchParams.get("coi") === "1" || request.referrer.includes("coi=1");
   const appPathRegex = /.*\/(app_[^/]+\/)/;
   const m_appPath = appPathRegex.exec(url.pathname);
   if (m_appPath) {
@@ -2259,7 +2271,7 @@ self.addEventListener("fetch", function(event) {
         const isAppRoot = url.pathname === "/";
         const filter = isAppRoot ? injectSocketFilter : identityFilter;
         const blob = await request.blob();
-        const resp = await fetchASGI(
+        return fetchASGI(
           apps[m_appPath[1]],
           new Request(url.toString(), {
             method: request.method,
@@ -2273,11 +2285,6 @@ self.addEventListener("fetch", function(event) {
           void 0,
           filter
         );
-        if (coiRequested) {
-          return addCoiHeaders(resp);
-        } else {
-          return resp;
-        }
       })()
     );
     return;
@@ -2293,11 +2300,11 @@ self.addEventListener("fetch", function(event) {
           return cachedResponse;
         }
         try {
-          const networkResponse = addCoiHeaders(await fetch(request));
+          const networkResponse = await fetch(request);
           const baseUrl = self.location.origin + dirname(self.location.pathname);
           if (request.url.startsWith(baseUrl + "/shinylive/") || request.url === baseUrl + "/favicon.ico") {
             const cache = await caches.open(version + cacheName);
-            await cache.put(request, networkResponse.clone());
+            cache.put(request, networkResponse.clone());
           }
           return networkResponse;
         } catch {
@@ -2309,6 +2316,7 @@ self.addEventListener("fetch", function(event) {
     );
     return;
   }
+<<<<<<< Updated upstream
   if (coiRequested) {
     event.respondWith(
       (async () => {
@@ -2317,6 +2325,8 @@ self.addEventListener("fetch", function(event) {
       })()
     );
   }
+=======
+>>>>>>> Stashed changes
 });
 var apps = {};
 (async () => {

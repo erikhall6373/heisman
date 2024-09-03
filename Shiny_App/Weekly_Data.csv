@@ -1,4 +1,5 @@
 Player,School,Passing_Rate,Passing_TD,Rushing_TD,Power5,CPI
+<<<<<<< Updated upstream
 Jayden Daniels,LSU,208.0,40,10,1,10.366855629529665
 Jason Bean,Kansas,175.0,18,3,1,5.876895066699346
 Jalen Milroe,Alabama,172.2,23,12,1,17.289403204983948
@@ -104,3 +105,121 @@ Cole Snyder,Buffalo,108.9,13,1,0,0.20703490230947783
 Brendon Lewis,Nevada,100.0,2,4,0,0.06607472943836935
 Alex Flinn,East Carolina,98.5,6,0,0,0.07417301359925038
 Deacon Hill,Iowa,87.4,5,2,1,6.682045091050634
+=======
+D.J. Uiagalelei,Florida State,116.5,1.0,0.0,1,0.0
+Shedeur Sanders,Colorado,219.4,4.0,0.0,1,25.0
+Devon Dampier,New Mexico,128.7,4.0,3.0,0,0.0
+Brayden Schager,Hawaii,110.6,3.0,2.0,0,12.5
+Noah Fifita,Arizona,211.8,4.0,0.0,1,25.0
+Haynes King,Georgia Tech,166.6,2.0,0.0,1,25.0
+Jaxson Dart,Ole Miss,272.6,5.0,1.0,1,25.0
+Chandler Morris,North Texas,187.2,3.0,2.0,0,25.0
+Cameron Ward,Miami (FL),189.3,3.0,0.0,1,25.0
+Brendan Sorsby,Cincinnati,196.0,2.0,2.0,1,25.0
+Dillon Gabriel,Oregon,162.3,2.0,0.0,1,25.0
+Miller Moss,USC,172.4,1.0,0.0,1,25.0
+Behren Morton,Texas Tech,186.3,5.0,0.0,1,25.0
+Kyle McCord,Syracuse,174.2,4.0,0.0,1,25.0
+Josh Hoover,Texas Christian,153.0,2.0,0.0,1,25.0
+John Mateer,Washington State,335.7,5.0,1.0,0,25.0
+Jake Retzlaff,BYU,197.1,3.0,0.0,1,25.0
+Joey Labas,Central Michigan,236.0,3.0,0.0,0,25.0
+Owen McCown,UTSA,174.9,3.0,1.0,0,25.0
+Eli Holstein,Pitt,165.3,3.0,0.0,1,25.0
+Preston Stone,SMU,150.7,3.0,0.0,1,25.0
+Ethan Hampton,Northern Illinois,310.3,5.0,0.0,0,25.0
+Payton Thorne,Auburn,253.6,4.0,1.0,1,25.0
+Kyron Drones,Virginia Tech,162.6,2.0,0.0,1,0.0
+Grayson McCall,North Carolina State,151.5,3.0,0.0,1,25.0
+Nico Iamaleava,Tennessee,208.1,3.0,0.0,1,25.0
+Billy Edwards Jr.,Maryland,195.3,2.0,0.0,1,25.0
+Jake Garcia,East Carolina,155.8,4.0,0.0,0,25.0
+Garrett Nussmeier,LSU,155.1,2.0,0.0,1,0.0
+Seth Henigan,Memphis,181.6,2.0,0.0,0,25.0
+Kirk Francis,Tulsa,204.4,4.0,0.0,0,25.0
+Emmett Brown,San Jose State,155.7,3.0,0.0,0,25.0
+Anthony Colandrea,Virginia,211.1,2.0,1.0,1,25.0
+Maalik Murphy,Duke,137.6,2.0,0.0,1,25.0
+Brendon Lewis,Nevada,149.0,4.0,0.0,0,12.5
+Maddux Madsen,Boise State,151.0,1.0,0.0,0,25.0
+Carson Beck,Georgia,160.5,2.0,0.0,1,25.0
+Hudson Card,Purdue,240.5,4.0,0.0,1,25.0
+Ethan Garbers,UCLA,108.3,1.0,0.0,1,25.0
+Rocco Becht,Iowa State,188.6,2.0,1.0,1,25.0
+Hank Bachmeier,Wake Forest,178.5,3.0,0.0,1,25.0
+Quinn Ewers,Texas,184.2,3.0,0.0,1,25.0
+Sam Leavitt,Arizona State,192.1,2.0,0.0,1,25.0
+Cameron Rising,Utah,318.9,5.0,0.0,1,25.0
+Cade McNamara,Iowa,167.7,3.0,0.0,1,25.0
+Will Rogers,Washington,170.4,1.0,0.0,1,25.0
+Blake Shapen,Mississippi State,228.2,3.0,1.0,1,25.0
+Alan Bowman,Oklahoma State,155.1,2.0,0.0,1,25.0
+Kaidon Salter,Liberty,186.6,2.0,0.0,0,25.0
+Cole Snyder,Eastern Michigan,144.8,1.0,1.0,0,25.0
+Dylan Raiola,Nebraska,168.9,2.0,0.0,1,25.0
+Mikey Keene,Fresno State,114.0,1.0,0.0,0,0.0
+Tyler Shough,Louisville,211.2,4.0,0.0,1,25.0
+Taylen Green,Arkansas,181.9,2.0,2.0,1,25.0
+Hunter Watson,Sam Houston,154.9,2.0,0.0,0,25.0
+Brady Cook,Missouri,136.9,1.0,1.0,1,25.0
+Will Howard,Ohio State,164.5,3.0,0.0,1,25.0
+Brett Gabbert,Miami (OH),100.2,0.0,0.0,0,0.0
+E.J. Warner,Rice,103.1,1.0,0.0,0,0.0
+Drew Allar,Penn State,229.7,3.0,0.0,1,25.0
+Jacob Zeno,UAB,142.7,2.0,0.0,0,25.0
+Danny O'Neil,San Diego State,141.1,2.0,0.0,0,25.0
+Luke Altmyer,Illinois,208.7,4.0,0.0,1,25.0
+Nicholas Vattiato,Middle Tennessee State,111.3,1.0,0.0,0,25.0
+Blake Baker,Louisiana Tech,119.5,1.0,0.0,0,25.0
+Davis Bryson,Kennesaw State,122.4,1.0,0.0,0,0.0
+Tucker Gleason,Toledo,174.5,3.0,0.0,0,25.0
+Bryson Barnes,Utah State,153.5,2.0,1.0,0,25.0
+CJ Ogbonna,Buffalo,154.1,2.0,0.0,0,25.0
+Max Brown,Charlotte,83.4,1.0,0.0,0,0.0
+DeQuan Finn,Baylor,148.8,2.0,1.0,1,25.0
+Tyler Van Dyke,Wisconsin,103.1,0.0,1.0,1,25.0
+Diego Pavia,Vanderbilt,216.0,2.0,1.0,1,25.0
+Devin Kargman,Kent State,120.7,2.0,0.0,0,0.0
+Parker Navarro,Ohio,104.0,0.0,0.0,0,0.0
+Kurtis Rourke,Indiana,139.3,1.0,0.0,1,25.0
+Mike Wright,Northwestern,109.8,0.0,1.0,1,25.0
+Taisun Phommachanh,Massachusetts,116.2,0.0,0.0,0,0.0
+Tyler Huff,Jacksonville State,148.8,1.0,0.0,0,0.0
+Brock Vandagriff,Kentucky,189.4,3.0,0.0,1,25.0
+Connor Bazelak,Bowling Green,132.3,0.0,0.0,0,25.0
+Max Brosmer,Minnesota,127.9,0.0,1.0,1,0.0
+K.J. Jefferson,UCF,181.3,2.0,1.0,1,25.0
+Ashton Daniels,Stanford,91.4,1.0,0.0,1,0.0
+Garrett Greene,West Virginia,101.9,0.0,0.0,1,0.0
+Fernando Mendoza,California,143.5,1.0,0.0,1,25.0
+Riley Leonard,Notre Dame,104.2,0.0,0.0,1,25.0
+Avery Johnson,Kansas State,149.8,2.0,0.0,1,25.0
+Byrum Brown,South Florida,128.8,0.0,1.0,0,25.0
+Joe Fagnano,Connecticut,136.4,1.0,0.0,0,0.0
+Jalon Daniels,Kansas,151.5,1.0,0.0,1,25.0
+Athan Kaliakmanis,Rutgers,155.2,3.0,0.0,1,25.0
+Spencer Petras,Utah State,143.2,1.0,0.0,0,25.0
+Cade Klubnik,Clemson,96.3,0.0,0.0,1,0.0
+Jackson Arnold,Oklahoma,168.2,4.0,0.0,1,25.0
+Hayden Wolff,Western Michigan,121.4,0.0,0.0,0,0.0
+Donovan Smith,Houston,74.5,0.0,0.0,1,0.0
+Keyone Jenkins,Florida International,110.8,1.0,0.0,0,0.0
+Forrest Brock,Temple,75.0,0.0,0.0,0,0.0
+Davis Warren,Michigan,104.8,1.0,0.0,1,25.0
+Cam Fancher,Florida Atlantic,84.2,1.0,0.0,0,0.0
+Skyler Locklear,UTEP,129.2,1.0,0.0,0,0.0
+Aidan Chiles,Michigan State,64.9,0.0,1.0,1,25.0
+LaNorris Sellers,South Carolina,85.1,0.0,1.0,1,25.0
+Austin Simmons,Ole Miss,122.7,1.0,0.0,1,25.0
+Thomas Castellanos,Boston College,159.4,2.0,1.0,1,25.0
+Conner Weigman,Texas A&M,54.7,0.0,0.0,1,0.0
+TJ Finley,Western Kentucky,70.1,0.0,0.0,0,0.0
+Graham Mertz,Florida,83.2,0.0,0.0,1,0.0
+Nick Evers,Connecticut,59.6,0.0,0.0,0,0.0
+John Busha,Air Force,85.5,0.0,0.0,0,25.0
+Max Johnson,North Carolina,84.0,0.0,1.0,1,25.0
+Brayden Fowler-Nicolosi,Colorado State,72.0,0.0,0.0,0,0.0
+Ben Finley,Akron,74.7,0.0,0.0,0,0.0
+Evan Svoboda,Wyoming,36.9,0.0,0.0,0,0.0
+Parker Awad,New Mexico State,35.9,0.0,0.0,0,25.0
+>>>>>>> Stashed changes

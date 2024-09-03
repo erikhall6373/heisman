@@ -6,6 +6,22 @@
       http-equiv="refresh"
       content="0;URL='../index.html?_shinylive-mode=editor-terminal-viewer'"
     />
+<<<<<<< Updated upstream
+=======
+    <script type="module">
+      import { runApp } from "../shinylive/shinylive.js";
+      const response = await fetch("../app.json");
+      if (!response.ok) {
+        throw new Error("HTTP error loading app.json: " + response.status);
+      }
+      const appFiles = await response.json();
+
+      const appRoot = document.getElementById("root");
+      runApp(appRoot, "editor-terminal-viewer", {startFiles: appFiles});
+    </script>
+    <link rel="stylesheet" href="../shinylive/style-resets.css" />
+    <link rel="stylesheet" href="../shinylive/shinylive.css" />
+>>>>>>> Stashed changes
   </head>
   <body></body>
 </html>
