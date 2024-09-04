@@ -5,41 +5,9 @@ import pickle
 import statsmodels.api as sm
 from shinywidgets import output_widget, render_widget
 import plotly.express as px
-from pathlib import Path
-import os
 
-app_path = os.path.dirname(os.path.abspath("__file__")) + "/Shiny_App"
-model_path =  app_path + "/heisman_model.pkl"
-model_data_path = app_path + "/Model_Data.csv"
-weekly_data_path = app_path  + "/Weekly_Data.csv"
-top_ten_html_path = app_path  + "/weekly.html"
 
-model = pd.read_pickle(model_path)
-with open(top_ten_html_path, 'r') as file:
-    top_ten_html = file.read()
-################### Historical #########################
-model_data = pd.read_csv(model_data_path).reset_index(drop = True)
-
-predict_data =  model_data[['Passing_Rate', 'Passing_TD', 'Rushing_TD', 'Power5', 'CPI']]
-predict_data = sm.tools.add_constant(predict_data)
-predict_data['Prediction'] = model.predict(predict_data)
-predict_data = predict_data['Prediction']
-
-model_data = pd.merge(model_data, predict_data, left_index=True, right_index=True)
-model_data['CPI'] = model_data['CPI'].round(2)
-model_data['Prediction'] = model_data['Prediction'].round(2)
-
-################### Current #########################
-current_df = pd.read_csv(weekly_data_path).reset_index(drop = True)
-
-current_predict_df =  current_df[['Passing_Rate', 'Passing_TD', 'Rushing_TD', 'Power5', 'CPI']]
-current_predict_df = sm.tools.add_constant(current_predict_df)
-current_predict_df['Projected Voting Points'] = model.predict(current_predict_df)
-current_predict_df = current_predict_df['Projected Voting Points']
-
-current_df = pd.merge(current_df, current_predict_df, left_index=True, right_index=True)
-current_df['CPI'] = current_df['CPI'].round(2)
-current_df['Projected Voting Points'] = current_df['Projected Voting Points'].round(2)
+from shared import app_dir, model, model_data, predict_data, current_df, current_predict_df, html_top10_string
 
 
 # Part 1: ui ----
@@ -112,7 +80,7 @@ app_ui = ui.page_fluid(
            )
            ),
     ui.nav("Top 10",
-           ui.HTML(top_ten_html)
+           ui.HTML(html_top10_string)
            )       
     )
 )
